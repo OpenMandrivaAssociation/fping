@@ -10,6 +10,7 @@ Patch0:		fping-2.4b2_to-ipv6-debian_fix.diff
 BuildRequires:	autoconf2.5
 BuildRequires:	automake1.7
 BuildRequires:	libtool
+BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 fping is a ping(1) like program which uses the Internet Control Message
