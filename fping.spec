@@ -1,7 +1,7 @@
 Summary:	Quickly ping N number of hosts to determine their reachability
 Name:		fping
 Version:	2.4b2
-Release:	%mkrel 11
+Release:	%mkrel 12
 License:	GPL
 Group:		Networking/Other
 URL:		http://www.fping.com/
@@ -10,7 +10,7 @@ Patch0:		fping-2.4b2_to-ipv6-debian_fix.diff
 BuildRequires:	autoconf2.5
 BuildRequires:	automake1.7
 BuildRequires:	libtool
-BuildRoot:	%{_tmppath}/%{name}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 fping is a ping(1) like program which uses the Internet Control Message
