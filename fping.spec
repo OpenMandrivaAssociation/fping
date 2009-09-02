@@ -1,7 +1,7 @@
 Summary:	Quickly ping N number of hosts to determine their reachability
 Name:		fping
 Version:	2.4b2
-Release:	%mkrel 12
+Release:	%mkrel 13
 License:	GPL
 Group:		Networking/Other
 URL:		http://www.fping.com/
