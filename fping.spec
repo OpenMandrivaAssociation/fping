@@ -1,14 +1,14 @@
 Summary:	Quickly ping N number of hosts to determine their reachability
 Name:		fping
 Version:	2.4b2
-Release:	%mkrel 15
+Release:	%mkrel 16
 License:	GPL
 Group:		Networking/Other
 URL:		http://www.fping.com/
 Source0:	fping-2.4b2_to-ipv6.tar.bz2
 Patch0:		fping-2.4b2_to-ipv6-debian_fix.diff
 BuildRequires:	autoconf2.5
-BuildRequires:	automake1.7
+BuildRequires:	automake
 BuildRequires:	libtool
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -32,7 +32,7 @@ chmod 644 README INSTALL ChangeLog
 
 %build
 export WANT_AUTOCONF_2_5="1"
-rm -f configure; libtoolize --copy --force; aclocal-1.7; automake-1.7 --add-missing; autoconf
+rm -f configure; libtoolize --copy --force; aclocal; automake --add-missing; autoconf
 
 %configure2_5x \
     --bindir=/bin \
