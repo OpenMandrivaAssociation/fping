@@ -7,6 +7,7 @@ Group:		Networking/Other
 URL:		http://www.fping.com/
 Source0:	fping-2.4b2_to-ipv6.tar.bz2
 Patch0:		fping-2.4b2_to-ipv6-debian_fix.diff
+Patch1:		fping-2.4b2_to-ipv6-binary-fix.diff
 BuildRequires:	autoconf2.5
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -26,6 +27,7 @@ a certain time limit and/or retry limit it will be considered unreachable.
 
 %setup -q -n fping-2.4b2_to-ipv6
 %patch0 -p0
+%patch1 -p1
 
 # fix strange perms
 chmod 644 README INSTALL ChangeLog
@@ -52,6 +54,7 @@ rm -f configure; libtoolize --copy --force; aclocal; automake --add-missing; aut
 %defattr(-,root,root)
 %doc README INSTALL ChangeLog
 %attr(4755,root,root) /bin/fping
+%attr(4755,root,root) /bin/fping6
 %{_mandir}/man8/fping.8*
 
 
