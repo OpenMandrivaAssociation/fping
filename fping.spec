@@ -1,17 +1,11 @@
-Summary:	Quickly ping N number of hosts to determine their reachability
 Name:		fping
-Version:	2.4b2
-Release:	%mkrel 18
-License:	GPL
+Version:	3.0
+Release:	%mkrel 1
+Summary:	Quickly ping N number of hosts to determine their reachability
+License:	BSD
 Group:		Networking/Other
-URL:		http://www.fping.com/
-Source0:	fping-2.4b2_to-ipv6.tar.bz2
-Patch0:		fping-2.4b2_to-ipv6-debian_fix.diff
-Patch1:		fping-2.4b2_to-ipv6-binary-fix.diff
-BuildRequires:	autoconf2.5
-BuildRequires:	automake
-BuildRequires:	libtool
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
+URL:		http://fping.org/
+Source0:	http://fping.org/dist/fping-%{version}.tar.gz
 
 %description
 fping is a ping(1) like program which uses the Internet Control Message
@@ -24,27 +18,14 @@ and removed from the list of hosts to check. If a host does not respond within
 a certain time limit and/or retry limit it will be considered unreachable.
 
 %prep
-
-%setup -q -n fping-2.4b2_to-ipv6
-%patch0 -p0
-%patch1 -p1
-
-# fix strange perms
-chmod 644 README INSTALL ChangeLog
+%setup -q
 
 %build
-export WANT_AUTOCONF_2_5="1"
-rm -f configure; libtoolize --copy --force; aclocal; automake --add-missing; autoconf
-
-%configure2_5x \
-    --bindir=/bin \
-    --sbindir=/bin
-
+%configure2_5x
 %make
 
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %makeinstall_std
 
 %clean
@@ -53,8 +34,7 @@ rm -f configure; libtoolize --copy --force; aclocal; automake --add-missing; aut
 %files 
 %defattr(-,root,root)
 %doc README INSTALL ChangeLog
-%attr(4755,root,root) /bin/fping
-%attr(4755,root,root) /bin/fping6
+%attr(4755,root,root) %{_sbindir}/fping
 %{_mandir}/man8/fping.8*
 
 
