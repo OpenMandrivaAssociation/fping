@@ -1,5 +1,5 @@
 Name:		fping
-Version:	3.0
+Version:	3.4
 Release:	%mkrel 1
 Summary:	Quickly ping N number of hosts to determine their reachability
 License:	BSD
@@ -25,16 +25,9 @@ a certain time limit and/or retry limit it will be considered unreachable.
 %make
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %files 
-%defattr(-,root,root)
 %doc README INSTALL ChangeLog
 %attr(4755,root,root) %{_sbindir}/fping
 %{_mandir}/man8/fping.8*
-
-
