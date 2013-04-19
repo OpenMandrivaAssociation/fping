@@ -1,10 +1,10 @@
+Summary:	Quickly ping N number of hosts to determine their reachability
 Name:		fping
 Version:	3.4
-Release:	%mkrel 1
-Summary:	Quickly ping N number of hosts to determine their reachability
+Release:	1
 License:	BSD
 Group:		Networking/Other
-URL:		http://fping.org/
+Url:		http://fping.org/
 Source0:	http://fping.org/dist/fping-%{version}.tar.gz
 
 %description
@@ -31,3 +31,4 @@ a certain time limit and/or retry limit it will be considered unreachable.
 %doc README INSTALL ChangeLog
 %attr(4755,root,root) %{_sbindir}/fping
 %{_mandir}/man8/fping.8*
+
