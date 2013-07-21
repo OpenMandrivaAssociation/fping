@@ -1,11 +1,11 @@
-Summary:	Quickly ping N number of hosts to determine their reachability
 Name:		fping
-Version:	3.4
+Version:	3.5
 Release:	1
+Summary:	Quickly ping N number of hosts to determine their reachability
 License:	BSD
 Group:		Networking/Other
-Url:		http://fping.org/
-Source0:	http://fping.org/dist/fping-%{version}.tar.gz
+URL:		http://fping.org/
+Source0:	http://fping.org/dist/%{name}-%{version}.tar.gz
 
 %description
 fping is a ping(1) like program which uses the Internet Control Message
