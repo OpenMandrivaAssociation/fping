@@ -1,5 +1,5 @@
 Name:		fping
-Version:	3.5
+Version:	3.6
 Release:	1
 Summary:	Quickly ping N number of hosts to determine their reachability
 License:	BSD
@@ -31,4 +31,5 @@ a certain time limit and/or retry limit it will be considered unreachable.
 %doc README INSTALL ChangeLog
 %attr(4755,root,root) %{_sbindir}/fping
 %{_mandir}/man8/fping.8*
+
 
