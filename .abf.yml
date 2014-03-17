@@ -2,5 +2,6 @@ removed_sources:
   fping-3.4.tar.gz: 52e13afb2e6a27ec8ec69e6e10f103c4a7a1afe7
   fping-3.5.tar.gz: b2552aa5b9450c660e37761c3e5efe8ac28c83d2
   fping-3.6.tar.gz: 85aac6084d5ccef2b5a4c4eb892f891576c0c0fd
-sources:
   fping-3.8.tar.gz: 1aad76c065d4049ca6c5c1b4de82c13f4529a201
+sources:
+  fping-3.9.tar.gz: 4bbd659abc800fde0333799b223c068b3bb303a7
