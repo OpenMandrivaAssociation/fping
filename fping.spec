@@ -1,7 +1,8 @@
 Name:		fping
-Version:	3.9
+Version:	3.10
 Release:	1
 Summary:	Quickly ping N number of hosts to determine their reachability
+
 License:	BSD
 Group:		Networking/Other
 URL:		http://fping.org/
@@ -31,6 +32,7 @@ a certain time limit and/or retry limit it will be considered unreachable.
 %doc README INSTALL ChangeLog
 %attr(4755,root,root) %{_sbindir}/fping
 %{_mandir}/man8/fping.8*
+
 
 
 
