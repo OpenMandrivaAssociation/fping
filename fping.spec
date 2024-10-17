@@ -5,7 +5,7 @@ Summary:	Quickly ping N number of hosts to determine their reachability
 
 License:	BSD
 Group:		Networking/Other
-URL:		http://fping.org/
+URL:		https://fping.org/
 Source0:	http://fping.org/dist/%{name}-%{version}.tar.gz
 
 %description
