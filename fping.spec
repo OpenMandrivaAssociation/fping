@@ -8,6 +8,11 @@ Group:		Networking/Other
 URL:		https://fping.org/
 Source0:	http://fping.org/dist/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 fping is a ping(1) like program which uses the Internet Control Message
 Protocol (ICMP) echo request to determine if a host is up. fping is different
