@@ -1,6 +1,6 @@
 Name:		fping
-Version:	3.10
-Release:	8
+Version:	5.5
+Release:	1
 Summary:	Quickly ping N number of hosts to determine their reachability
 
 License:	BSD
